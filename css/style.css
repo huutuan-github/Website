@@ -64,10 +64,10 @@ input.themgiohang{
 }
 
 .menu{
-    border: 1px solid #1aff8c;
+    border: 1px solid red;
     height: 50px;
     width: 100%;
-    background: #00e6ac;
+    background: red;
 }
 
 ul.list_menu {
@@ -79,13 +79,13 @@ ul.list_menu {
 }
 
 ul.list_menu li:hover {
-    background: burlywood;
+    background: black;
 }
 
 ul.list_menu li a{
     text-decoration: none;
     text-align: center;
-    color: #000000;
+    color: white;
  }
 
  ul.list_menu li{
@@ -95,7 +95,7 @@ ul.list_menu li a{
 }
 
 #main{
-    border: 1px solid #00ff80;
+    border: 1px solid ;
     height: 400px;
     width: 100%;
 }
@@ -107,6 +107,7 @@ ul.list_menu li a{
     margin-left: 5px;
     margin-top: 5px;
     float: left;   
+    
 }
 
 ul.list_sidebar {
@@ -187,12 +188,12 @@ p.price_product{
     border: 1px solid #ff1a8c;
     height: 150px;
     width: 100%;
-    background: #00cc99;
+    background: red;
 }
 
 p.footer_copyright{
     text-align: center;
-    color: #000;
+    color: white;
 }
 
 .clear{
