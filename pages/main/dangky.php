@@ -17,7 +17,7 @@
     }
 
 ?>
-<p>dang ky thanh vien</p>
+<p>Dăng Kí Thành Viên</p>
 <style type="text/css">
     table.dangky tr td{
         padding: 5px;

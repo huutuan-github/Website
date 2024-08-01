@@ -1,12 +1,12 @@
-<p>Them Danh Muc San Pham</p>
+<p>Thêm Danh Mục Sản Phẩm</p>
 <table border="1" width="50%" style="border-collapse: collapse;">
   <form method="POST" action="modules/quanlydanhmucsp/suly.php">
       <tr>
-        <td>Ten Danh Muc</td>
+        <td>Tên Danh Mục</td>
         <td><input type="text" name="tendanhmuc"></td>
       </tr>
       <tr>
-        <td>Thu Tu</td>
+        <td>Thứ Tự</td>
         <td><input type="text" name="thutu"></td>
       </tr>
       <tr>

@@ -6,7 +6,7 @@
 ?>
 <div class="wrapper_chitiet">
     <div class="hinhanh_sanpham">
-        <img width="100%" src="admincp/modules/quanlysp/uploads/<?php echo $row_chitiet['hinhanh']?>">
+        <img width="85%" src="admincp/modules/quanlysp/uploads/<?php echo $row_chitiet['hinhanh']?>">
     </div>
     <form method="POST" action="pages/main/themgiohang.php?idsanpham=<?php echo $row_chitiet['id_sanpham'] ?>">
         <div class="chitiet_sanpham">

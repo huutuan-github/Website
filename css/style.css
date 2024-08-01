@@ -59,7 +59,7 @@ input.themgiohang{
     background-repeat: no-repeat;
     background-size: 100% 180px;
     border: 1px solid #ff80ff ;
-    height: 130px;
+    height: 181px;
     width: 100%;
 }
 
@@ -186,7 +186,7 @@ p.price_product{
 
 .footer{
     border: 1px solid #ff1a8c;
-    height: 150px;
+    height: 100px;
     width: 100%;
     background: red;
 }
@@ -198,4 +198,52 @@ p.footer_copyright{
 
 .clear{
     clear: both;
+}
+
+.home-sci{
+    position: absolute;
+    background-color: red;
+    bottom: -15px;
+    width: 160px;
+    display: flex;
+    right: 77px;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color: lightblue;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(92, 198, 255);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
 }

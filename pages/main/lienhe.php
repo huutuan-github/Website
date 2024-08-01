@@ -1,7 +1,7 @@
-<p>Lien He</p>
+<p>Liên Hệ</p>
 <h2>
     <td>Huỳnh Giang Hữu Tuấn</td>
-    <tr a href="tef:070085106">Sđt</tr>
+    <td>std: 0702085106</td>
 </h2>
 <?php
     $sql_lh = "SELECT * FROM tbl_lienhe WHERE id=1";
