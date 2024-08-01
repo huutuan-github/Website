@@ -12,7 +12,7 @@
 ?>
 <div class="menu">
             <ul class="list_menu">
-                <li><a href="index.php">Trang Chủ</a></li>
+                <li><a href="./index.php">Trang Chủ</a></li>
                 <?php
                 while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
                 ?>
