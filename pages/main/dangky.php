@@ -11,7 +11,7 @@
             echo '<p style="color:green">Bạn Đã Đăng Ký Thành Công</p>';
             $_SESSION['dangky']= $tenkhachhang;
             $_SESSION['id_khachhang']= mysqli_insert_id($mysqli);
-            header('Location:index.php?quanly=giohang');
+         //   header('Location:index.php?quanly=giohang');
         }
         
     }

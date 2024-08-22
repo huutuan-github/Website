@@ -54,13 +54,24 @@ input.themgiohang{
     cursor: pointer;
 }
 
-.header{
-    background-image: url("../images/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 180px;
-    border: 1px solid #ff80ff ;
-    height: 181px;
+.header {
+    height: 280px;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out;
+}
+
+.header .slides.hidden {
+    opacity: 0;
 }
 
 .menu{
@@ -114,7 +125,8 @@ ul.list_sidebar {
     padding: 0;
     width: 100%;
     list-style: none;
-    line-height: 27px   
+    line-height: 27px  ;
+    background-color: #09aad0;
 }
 
 ul.list_sidebar li:hover {
@@ -247,3 +259,139 @@ p.footer_copyright{
 .home-sci a:hover::before{
     width: 100%;
 }
+
+.form-container{
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: #09aad0;
+}
+
+.input-row{
+ margin-bottom: 10px;
+}
+.input-row label{
+    display: block;
+    margin-bottom: 3px;
+}
+.input-row input, textarea{
+    width: 100%;
+    padding: 8px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    margin-bottom: 3px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input-row textarea{
+    height: 55px;
+}
+.input-row input[type="submit"]{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background: #002f3a;
+}
+.success{
+    background: #9fd2a1;
+    padding: 5px 10px;
+    text-align: center;
+    color: #326b07;
+    border-radius: 3px;
+    font-synthesis: 14px;
+    margin-top: 10px;
+}
+
+/*----------------------------------------*/
+
+
+ul.product_list li img {
+    width: 100%;
+    height: 170px;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul.product_list li:hover img {
+    transform: scale(1.05); /* Phóng to hình ảnh khi hover */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.header {
+    height: 280px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+p.title_product:hover {
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.sidebar {
+    border: 1px solid #000066;
+    height: 390px;
+    width: 20%;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+input.themgiohang:hover {
+    animation: pulse 0.6s infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

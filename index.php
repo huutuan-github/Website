@@ -20,5 +20,24 @@
         ?>
  
     </div>
+    <script>
+const slides = document.querySelectorAll('.header .slides');
+let currentIndex = 0;
+
+function changeBackgroundImage() {
+    slides.forEach((slide, index) => {
+        slide.classList.toggle('hidden', index !== currentIndex);
+    });
+
+    currentIndex = (currentIndex + 1) % slides.length;
+}
+
+// Khởi tạo các hình ảnh nền
+slides[0].style.backgroundImage = 'url("../images/tainghe.jpg")';
+slides[1].style.backgroundImage = 'url("../images/banner1.jpg")';
+slides[2].style.backgroundImage = 'url("../images/banner3.jpg")';
+
+setInterval(changeBackgroundImage, 3000); // Thay đổi hình ảnh mỗi 3 giây
+</script>
 </body>
 </html> 
